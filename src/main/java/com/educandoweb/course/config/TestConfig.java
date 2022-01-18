@@ -8,14 +8,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import com.educandoweb.course.entities.User;
-import com.educandoweb.course.repository.UserRepositoty;
+import com.educandoweb.course.repository.UserRepository;
 
 @Configuration
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
 	
 	@Autowired
-	private UserRepositoty userRepositoty;
+	private UserRepository userRepositoty;
 
 	@Override
 	public void run(String... st) throws Exception {
